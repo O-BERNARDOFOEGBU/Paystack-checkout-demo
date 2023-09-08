@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+# Food Vendor Application with Paystack Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to our Food Vendor Application! This web application is built using TypeScript, React, and Tailwind CSS. It allows users to browse food items, add them to the cart, and complete the payment process using Paystack's payment gateway.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Usage](#usage)
+- [Environment Variables](#environment-variables)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js and npm (Node Package Manager) installed on your machine.
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/food-vendor-app.git
+   cd food-vendor-app
+   ```
 
-### `npm run build`
+#### Install the project dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Running the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the development server:
 
-### `npm run eject`
+    npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Open your web browser and navigate to http://localhost:3000 to access the application.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Browse a selection of food items.
+Add food items to the cart.
+Adjust the quantity of items in the cart.
+Remove items from the cart.
+Calculate the total price of items in the cart.
+Securely process payments using Paystack's payment gateway.
+Receive payment success and failure notifications.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Usage
 
-## Learn More
+Browse the available food items and click on them to add to your cart.
+Visit your cart to review your selected items.
+Adjust the quantity of items or remove them from the cart.
+Click the "Checkout" button to start the payment process.
+You will be redirected to Paystack's secure payment gateway.
+Complete the payment process.
+Receive notifications about the payment status.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Environment Variables
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The following environment variables are required for the application to function properly. Create a .env file in the project root and add your values.
+
+# Paystack Configuration
+
+REACT_APP_PAYSTACK_PUBLIC_KEY=your_paystack_public_key
+REACT_APP_EMAIL=your_email@example.com
+
+REACT_APP_PAYSTACK_PUBLIC_KEY: Your Paystack public key for processing payments.
+REACT_APP_EMAIL: Your email address for notifications and order confirmation.
+
+### Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
+
+Fork the repository.
+Create your feature branch (git checkout -b feature/your-feature).
+Commit your changes (git commit -m 'Add some feature').
+Push to the branch (git push origin feature/your-feature).
+Create a new pull request.
+
+## License
+
+This project is licensed under the MIT License.
