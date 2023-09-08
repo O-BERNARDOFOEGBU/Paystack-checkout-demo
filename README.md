@@ -21,8 +21,8 @@ Welcome to our Food Vendor Application! This web application is built using Type
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/food-vendor-app.git
-   cd food-vendor-app
+   git clone https://github.com/O-BERNARDOFOEGBU/Paystack-checkout-demo.git
+   cd Paystack-checkout-demo
    ```
 
 #### Install the project dependencies:
