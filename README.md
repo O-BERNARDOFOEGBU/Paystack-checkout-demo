@@ -64,9 +64,13 @@ The following environment variables are required for the application to function
 # Paystack Configuration
 
 REACT_APP_PAYSTACK_PUBLIC_KEY=your_paystack_public_key
+
 REACT_APP_EMAIL=your_email@example.com
 
+
+
 REACT_APP_PAYSTACK_PUBLIC_KEY: Your Paystack public key for processing payments.
+
 REACT_APP_EMAIL: Your email address for notifications and order confirmation.
 
 ### Contributing
