@@ -26,7 +26,7 @@ interface Item {
               <div className="px-3 py-2">
                 <h1 className="text-xl font-bold mb-3">{name}</h1>
                 <div className="flex flex-wrap justify-between mb-2 mt-4">
-                  <p className="leading-relaxed mt-4 text-lg">Price: ${price}</p>
+                  <p className="leading-relaxed mt-4 text-lg">Price: NGN{price}</p>
                   <button
                     onClick={() => handleClick(item)}
                     className="bg-green-400 text-white py-2 px-3 text-lg rounded-xl hover:border-2 hover:bg-green-800 hover:text-brandColor hover:border-brandColor"

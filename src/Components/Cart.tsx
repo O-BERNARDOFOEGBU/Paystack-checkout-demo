@@ -3,8 +3,8 @@ import { FaTrash } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { usePaystackPayment } from 'react-paystack';
-import dotenv from 'dotenv';
-dotenv.config();
+// import dotenv from 'dotenv';
+// dotenv.config();
 
 interface CartItem {
  id: string;
@@ -95,7 +95,7 @@ const Cart = ({ cart, setCart, handleChange }: CartProps) => {
                  </button>
                </div>
                <div>
-                 <span className="text-brandColor py-1.5 px-2.5 rounded-lg mr-2.5"> $ {item.price}</span>
+                 <span className="text-brandColor py-1.5 px-2.5 rounded-lg mr-2.5"> NGN {item.price}</span>
                  <button
                    className="py-2 px-2.5 font-semibold bg-red-100 rounded-lg cursor-pointer text-red-500 hover:text-red-600"
                    onClick={() => handleRemove(item.id)}
@@ -110,7 +110,7 @@ const Cart = ({ cart, setCart, handleChange }: CartProps) => {
            <>
              <div className="flex justify-between mt-8">
                <span className="text-lg font-semibold">Total price :</span>
-               <span className="text-lg font-semibold text-brandColor">  ${price}</span>
+               <span className="text-lg font-semibold text-brandColor">  NGN {price}</span>
              </div>
              <section className="flex justify-between mt-12">
                <button onClick={() => initializePayment(onSuccess as any, onClose)} className="bg-green-400 text-white py-2 px-4 text-lg w-full rounded-xl hover:border-2 hover:bg-green-800 hover:text-brandColor hover:border-brandColor">Checkout</button>
